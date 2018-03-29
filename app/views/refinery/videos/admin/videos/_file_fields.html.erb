@@ -41,16 +41,16 @@
                               :title => t('.delete'),
                               :confirm => t('message', :scope => 'refinery.admin.delete', :title => 'file'),
                               :method => :delete) do %>
-                      <%= refinery_icon_tag("delete.png") %>
+                      <%= image_tag 'refinery/icons/delete.png', { width: 16, height: 16} %>
                       <div class="inline"><%= t('.delete_source') %></div>
                   <% end %>
               <% else %>
-                  <a href='#' onclick="remove_field($(this)); return false" class="remove_field" style='display: none'><%= refinery_icon_tag("delete.png")%>
+                  <a href='#' onclick="remove_field($(this)); return false" class="remove_field" style='display: none'><%=  image_tag 'refinery/icons/delete.png', { width: 16, height: 16}%>
                     <div class="inline"><%= t('.delete_source') %></div>
                   </a>
               <% end %>
           <% end  %>
-          <a href='#' onclick="add_field($(this)); return false" class="add_field" style='display: none'><%= refinery_icon_tag("add.png") %>
+          <a href='#' onclick="add_field($(this)); return false" class="add_field" style='display: none'><%= image_tag 'refinery/icons/add.png', { width: 16, height: 16} %>
             <div class="inline"><%= t('.add_source') %></div>
           </a>
         </div>

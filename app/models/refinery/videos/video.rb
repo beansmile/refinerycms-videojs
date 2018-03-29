@@ -50,6 +50,7 @@ module Refinery
         options = {
           id: "video_#{id}",
           class: "video-js #{Refinery::Videos.skin_css_class}",
+          "data-setup" => '{}',
           poster: '' || poster.url
         }.merge(config.select{|k, v| v != "false"}.transform_values{|val| val=="true" ? true : val})
 

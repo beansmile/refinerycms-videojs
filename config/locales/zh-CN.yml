@@ -7,7 +7,7 @@ zh-CN:
         additional_dashboard_menu_items:
           create_new: 添加新视频
     plugins:
-      refinerycms_videos:
+      refinery_videos:
         title: 视频
     videos:
       admin:
@@ -32,7 +32,7 @@ zh-CN:
             use_embedded_video: 使用内嵌视频
           form:
             title: 标题
-            poster: 上传者
+            poster: 封面图
             width: 宽度
             height: 高度
           file_fields:

@@ -8,7 +8,7 @@ module Refinery
                 :order => 'position ASC',
                 :sortable => true
 
-        before_filter :set_embedded, :only => [:new, :create]
+        before_action :set_embedded, :only => [:new, :create]
 
         def show
           @video = Video.find(params[:id])

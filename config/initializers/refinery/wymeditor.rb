@@ -11,13 +11,21 @@ Refinery::Wymeditor.configure do |config|
         "0"=> "width",
         "1"=> "height",
         "2"=> "poster",
-        "3"=> "data-setup"
+        "3"=> "data-setup",
+        "4"=> "autoplay",
+        "5"=> "controls",
+        "6"=> "loop",
+        "7"=> "muted",
+        "8"=> "poster",
+        "9"=> "preload",
+        "10"=> "src"
       }
     },
      "source"=> {
        "attributes"=> {
          "0"=> "src",
-         "1"=> "type"
+         "1"=> "type",
+         "2"=> "media"
        },
        "inside" => {
          "0" => "audio",
